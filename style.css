@@ -155,11 +155,10 @@ nav hr{
 .about-content{
   display: grid;
   justify-items: center;
-  width: auto auto auto auto;
 }
 .content-control{
   display: grid;
-  text-align: center;
+  justify-content: center;
   justify-items: center;
 }
 .content-control span{
@@ -175,16 +174,18 @@ nav hr{
 }
 .about-content .content-control p{
   color: #fff;
-  width: auto;
+  width: 80%;
   display: grid;
-  justify-items: center;
 }
 .services h4{
   color: rgb(230, 230, 43);
+  text-align: center;
 }
 .services ul li{
+  text-align: center;
   color:rgb(230, 230, 43);
-  width: 700px;
+  width: 700px; 
+  display: grid;
 }
 form{
   margin: auto;
@@ -224,6 +225,13 @@ form{
     border: 3px solid rgb(255, 255, 255);
     padding: 10px;
     margin-top: 40px;
+  }
+  .services ul li{
+    text-align: center;
+    color:rgb(230, 230, 43);
+    width: 700px; 
+    display: grid;
+    justify-content: center;
   }
 
 }
