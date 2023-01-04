@@ -207,3 +207,46 @@ form{
   border-radius: 2px;
   border: none;
 }
+
+@media screen and (max-width: 1023px){
+  .footer-1{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto;
+    padding: 5px;
+  }
+  form{
+    margin: auto;
+    width: 80%;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 40px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .footer-1{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto ;
+    padding: 5px;
+    width: auto;
+  }
+  .footer-control{
+    margin-top: 10px;
+  }
+  ul li{
+    display: block;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  form{
+    margin: auto;
+    width: 80%;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 40px;
+  }
+}
