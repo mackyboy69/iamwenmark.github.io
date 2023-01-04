@@ -78,6 +78,7 @@ ul li a:hover::after{
 }
 
 .content{
+  width: auto;
   display: grid;
   justify-items: center;
   margin-top: 60px;
@@ -154,7 +155,7 @@ nav hr{
 .about-content{
   display: grid;
   justify-items: center;
-  margin-top: 60px;
+  width: auto auto auto auto;
 }
 .content-control{
   display: grid;
@@ -168,20 +169,22 @@ nav hr{
   width: 200px;
   border-radius: 50%;
 }
-.about-content .content-control h3{
-  color: rgb(230, 230, 43)
+.about-content .content-control .h3{
+  color: rgb(230, 230, 43);
+
 }
 .about-content .content-control p{
   color: #fff;
-  text-align: justify;
-  width: 600px;
+  width: auto;
+  display: grid;
+  justify-items: center;
 }
 .services h4{
   color: rgb(230, 230, 43);
 }
 .services ul li{
   color:rgb(230, 230, 43);
-  width: 600px;
+  width: 700px;
 }
 form{
   margin: auto;
