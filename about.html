@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <title>HOME</title>
+</head>
+<body>
+  <div class = "info">
+    <p>You're already logged in.</p>
+  </div>
+  
+    <nav>
+      <li class = "logo" ><a href="index.html"><img src="logo.jpg" style="width: 100%"></a></li>
+      <p ><span>Call us:  </span> +639 6753 431 88</p>
+      <p ><span>Email:  </span> iam.wenmark@gmail.com</p>
+      <br>
+      <hr>
+      <ul class = "myDiv">
+        <li><a class = "btn" href="index.html">HOME</a></li> 
+        <li><a class = "btn" href="https://drive.google.com/drive/folders/1on1fuum7TLj53NZC6yfgB0yst2MEKgKL?usp=sharing">PORTFOLIO</a></li>
+        <li><a class = "btn active" href="about.html">ABOUT</a></li>
+        <li><a class = "btn" href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <br>
+   
+    <div class="about-content">
+      <div class = "content-control">
+        <img src="wen.png" alt=""><br>
+        <button style = "border: none; background-color: rgb(112, 190, 112); padding: 5px;"><a href="Wen_Resume.pdf" style  = "text-decoration:none; color: #000;" download>
+          Download CV
+        </a></button><br>
+        
+      </div>
+      <div class = "content-control">
+        <h3>About Wen:</h3>
+        <p>I have worked as a Graphic/Website design and development for 2 years and 3 years as General Virtual Assistant.
+          <br><span>Main skills:</span> <br>
+          HTML, CSS, JAVASCRIPT, PHP, JQUERY, SQL, ADOBE ILLUSTRATOR, ADOBE PHOTOSHOP, INDESIGN, SHOPIFY, SOCIAL MEDIA MANAGEMENT, CANVA
+          <br>
+          <span> Other skills:</span>
+         <br>
+          Strong communication and organizational skills <br>
+          Proficiency in Microsoft Office and Google Suite <br>
+          Experience with social media management and basic design software <br>
+          Ability to work independently and manage multiple tasks effectively <br>
+          Detail-oriented individual with a strong work ethic and excellent communication skills
+          <br>
+          
+          <span>Main job:</span>   <br>
+          Graphic Designer (Logo, banner, thumbnails, short clips (videos must be provided)) <br>
+          Web developer (front-end, basic back-end) <br>
+          Video editing
+          
+          <br>
+        </p>
+        <div class="services">
+          <h4>Other services: </h4>
+          <ul>
+            <li>Data Entry</li>
+            <li>Product Descriptions</li>
+            <li>Uploading Photos</li>
+            <li>Apply to Markets</li>
+            <li>Social Media Tasks</li>
+            <li>Light Photo Editing</li>
+            <li>Email Management</li>
+            <li>Research</li>
+            <li>Sending Market Details to Sales Team</li>
+            <li>Creating Newsletters</li>
+            <li>Hashtag Research</li>
+            <li>Respond to Common Customer Questions</li>
+            <li>Generate Wholesale Leads and Follow up</li>
+            <li>Generate Influencer Leads and Follow up</li>
+            <li>Schedule appointments and manage calendars for clients</li>
+            <li> Create and edit documents, presentations, and spreadsheets</li>
+
+          </ul>
+          
+        </div>
+          
+          
+      </div>
+
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <div class="footer-1">
+      <div class = "footer-control">
+        <h4>About us</h4>
+        <p>Who we are</p>
+        <p>How we work</p>
+        <p>Technology</p>
+      </div>
+      <div class = "footer-control">
+        <h4>Services</h4>
+        <p>Graphic design</p>
+        <p>General virtual assistant</p>
+        <p>Web development</p>
+      </div>
+      <div class = "footer-control">
+        <h4>Portfolio</h4>
+        <p>Selected works</p>
+        <p>Case studies</p>
+        <p>Testimonials</p>
+      </div>
+      <div class = "footer-control">
+        <h4>Contact</h4>
+        <p>Quote request</p>
+        <p>Payment info</p>
+        <p>Say hello</p>
+      </div>
+    </div>
+    <br>
+
+
+
+    <div class = "copywrite">
+      <p>Copywrite&copy;WMark2023 </p>
+    </div>
+  </footer>
+  
+  <script>
+    var btnContainer = document.getElementById('myDiv');
+    var btns = document.getElementsByClassName('btn');
+
+    for (var i = 0; i <  btns.length; i++){
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");  
+        current[0].className = current[0].className.replace("active", "");
+        this.className += "active";
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <title>HOME</title>
+</head>
+<body>
+  <div class = "info">
+    <p>You're already logged in.</p>
+  </div>
+  
+    <nav>
+      <li class = "logo" ><a href="index.html"><img src="logo.jpg" style="width: 100%"></a></li>
+      <p ><span>Call us:  </span> +639 6753 431 88</p>
+      <p ><span>Email:  </span> iam.wenmark@gmail.com</p>
+      <br>
+      <hr>
+      <ul class = "myDiv">
+        <li><a class = "btn" href="index.html">HOME</a></li> 
+        <li><a class = "btn" href="https://drive.google.com/drive/folders/1on1fuum7TLj53NZC6yfgB0yst2MEKgKL?usp=sharing">PORTFOLIO</a></li>
+        <li><a class = "btn" href="about.html">ABOUT</a></li>
+        <li><a class = "btn active" href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <br>
+   <form action="#">
+    <div class="form-control">
+      <label for="">What can we help you with?</label>
+      <input type="text">
+    </div>
+    <div class="form-control">
+      <label for="">Your name:</label>
+      <input type="text" placeholder="Example: Juan Dela Cruz">
+    </div>
+    <div class="form-control">
+      <label for="">Email:</label>
+      <input type="text" placeholder="Example: example@gmail.com">
+    </div>
+    <div class="form-control">
+      <label for="">Subject:</label>
+      <input type="text">
+    </div>
+    <div class="form-control">
+      <label for="">Details:</label>
+      <textarea name="" id="" cols="30" rows="10" style="width: 100%; border-radius: 2px; outline: none; padding: 5px;" placeholder="Please write your question or description of the problems you're trying to solve here"></textarea>
+      <br><button style = "padding: 5px; font-weight: bold; width: 100px; background-color:rgb(251, 255, 0)" >Submit</button>
+    </div>
+
+   </form>
+    
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <div class="footer-1">
+      <div class = "footer-control">
+        <h4>About us</h4>
+        <p>Who we are</p>
+        <p>How we work</p>
+        <p>Technology</p>
+      </div>
+      <div class = "footer-control">
+        <h4>Services</h4>
+        <p>Graphic design</p>
+        <p>General virtual assistant</p>
+        <p>Web development</p>
+      </div>
+      <div class = "footer-control">
+        <h4>Portfolio</h4>
+        <p>Selected works</p>
+        <p>Case studies</p>
+        <p>Testimonials</p>
+      </div>
+      <div class = "footer-control">
+        <h4>Contact</h4>
+        <p>Quote request</p>
+        <p>Payment info</p>
+        <p>Say hello</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class = "copywrite">
+      <p>Copywrite&copy;WMark2023 </p>
+    </div>
+  </footer>
+  
+  <script>
+    var btnContainer = document.getElementById('myDiv');
+    var btns = document.getElementsByClassName('btn');
+
+    for (var i = 0; i <  btns.length; i++){
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");  
+        current[0].className = current[0].className.replace("active", "");
+        this.className += "active";
+      });
+    }
+  </script>
+</body>
+</html>
